@@ -37,11 +37,13 @@ module.exports = {
       msg,
     };
   },
-  fail(msg = "", code = CODE.BUSINESS_ERROR) {
+  fail(msg = "", code = CODE.BUSINESS_ERROR, data = "") {
     log4js.error(msg);
     return {
       code,
       msg,
+      data,
     };
   },
+  CODE,
 };

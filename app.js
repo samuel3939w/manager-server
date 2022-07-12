@@ -6,11 +6,16 @@ const onerror = require("koa-onerror");
 const bodyparser = require("koa-bodyparser");
 const logger = require("koa-logger");
 const log4js = require("./utils/log4j");
-const index = require("./routes/index");
 const users = require("./routes/users");
+const router = require("koa-router")();
+const jwt = require("jsonwebtoken");
+const koajwt = require("koa-jwt");
+const util = require("./utils/util");
 
 // error handler
 onerror(app);
+
+require("./config/db");
 
 // middlewares
 app.use(
@@ -30,14 +35,29 @@ app.use(
 
 // logger
 app.use(async (ctx, next) => {
-  await next();
-  log4js.info("log output");
+  log4js.info(`post params:${JSON.stringify(ctx.request.body)}`);
+  log4js.info(`get params:${JSON.stringify(ctx.request.query)}`);
+  await next().catch((err) => {
+    if (err.status == "401") {
+      ctx.status = 200;
+      ctx.body = util.fail("Token認證失敗", util.CODE.AUTH_ERROR);
+    } else {
+      throw err;
+    }
+  });
 });
 
-// routes
-app.use(index.routes(), index.allowedMethods());
-app.use(users.routes(), users.allowedMethods());
+// 驗證token是否有效
+app.use(koajwt({ secret: "pro-partner" }).unless({
+  path:[/^\/api\/users\/login/]
+}));
 
+router.prefix("/api");
+
+// routes
+router.use(users.routes(), users.allowedMethods());
+
+app.use(router.routes(), router.allowedMethods());
 // error-handling
 app.on("error", (err, ctx) => {
   log4js.error(`${err.stack}`);
