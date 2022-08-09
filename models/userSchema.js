@@ -5,7 +5,7 @@ const userSchema = mongoose.Schema({
   userName: String, //用戶名稱
   password: String, //用戶密碼, md5加密
   userEmail: String, //用戶信箱
-  mobole: String, //手機號碼
+  mobile: String, //手機號碼
   sex: Number, //性別 0:男  1:女
   deptId: [], //部門
   job: String, //職位

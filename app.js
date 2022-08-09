@@ -6,11 +6,16 @@ const onerror = require("koa-onerror");
 const bodyparser = require("koa-bodyparser");
 const logger = require("koa-logger");
 const log4js = require("./utils/log4j");
-const users = require("./routes/users");
 const router = require("koa-router")();
 const jwt = require("jsonwebtoken");
 const koajwt = require("koa-jwt");
 const util = require("./utils/util");
+const users = require("./routes/users");
+const menus = require("./routes/menus");
+const roles = require("./routes/roles");
+const depts = require("./routes/depts");
+const leaves = require("./routes/leaves");
+const system = require("./routes/system");
 
 // error handler
 onerror(app);
@@ -48,14 +53,21 @@ app.use(async (ctx, next) => {
 });
 
 // 驗證token是否有效
-app.use(koajwt({ secret: "pro-partner" }).unless({
-  path:[/^\/api\/users\/login/]
-}));
+app.use(
+  koajwt({ secret: "pro-partner" }).unless({
+    path: [/^\/api\/users\/login/],
+  })
+);
 
 router.prefix("/api");
 
 // routes
 router.use(users.routes(), users.allowedMethods());
+router.use(menus.routes(), menus.allowedMethods());
+router.use(roles.routes(), roles.allowedMethods());
+router.use(depts.routes(), depts.allowedMethods());
+router.use(leaves.routes(), leaves.allowedMethods());
+router.use(system.routes(), system.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // error-handling
