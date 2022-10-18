@@ -8,17 +8,93 @@ const Menu = require("../models/menuSchema");
 const Dept = require("../models/deptSchema");
 const Role = require("../models/roleSchema");
 const util = require("./../utils/util");
+const ldapAuth = require("../utils/ldap");
 const jwt = require("jsonwebtoken");
 const md5 = require("md5");
 router.prefix("/users");
 
+// 用戶登入(LDAP)
+// router.post("/login", async (ctx) => {
+//   try {
+//     const { userId, password } = ctx.request.body;
+//     let ldapUser = await ldapAuth.loginAuth(userId, password);
+//     if (ldapUser) {
+//       const res = await User.findOne(
+//         {
+//           userId,
+//         },
+//         "userId userName userEmail state role deptId roleList"
+//       );
+//       // 如果存在直接配發token
+//       if (res) {
+//         const data = res._doc;
+//         const token = jwt.sign(
+//           {
+//             data,
+//           },
+//           "pro-partner",
+//           { expiresIn: "1h" }
+//         );
+//         data.token = token;
+//         ctx.body = util.success(data);
+//         // 如果不存在就在資料庫新增用戶
+//       } else {
+//         const user = new User({
+//           userId: ldapUser.cn,
+//           userName: ldapUser.description,
+//           userEmail: ldapUser.mail,
+//           role: 1, //默認普通用戶
+//           roleList: [],
+//           job: ldapUser.title,
+//           state: 1,
+//           deptId: [],
+//           mobile: "",
+//         });
+//         await user.save();
+//         // 獲取剛剛新增的用戶
+//         // const res = await User.findOne(
+//         //   {
+//         //     userId:ldapUser.cn,
+//         //   },
+//         //   "userId userName userEmail state role deptId roleList"
+//         // );
+//         // 如獲取成功就配發token
+//         //if (res) {
+//           const data = {
+//             userId: ldapUser.cn,
+//             userName: ldapUser.description,
+//             userEmail: ldapUser.mail,
+//             state: 1,
+//             role: 1,
+//             deptId: [],
+//             roleList: [],
+//           };
+//           const token = jwt.sign(
+//             {
+//               data,
+//             },
+//             "pro-partner",
+//             { expiresIn: "1h" }
+//           );
+//           data.token = token;
+//           ctx.body = util.success(data);
+//         //}
+//       }
+//     } else {
+//       ctx.body = util.fail("用戶名或密碼不正確!");
+//     }
+//   } catch (error) {
+//     ctx.body = util.fail(error.msg);
+//   }
+// });
+
 // 用戶登入
 router.post("/login", async (ctx) => {
   try {
-    const { userName, password } = ctx.request.body;
+    const { userId, password } = ctx.request.body;
     const res = await User.findOne(
       {
-        userName,
+        userName: userId,
         password: md5(password),
       },
       "userId userName userEmail state role deptId roleList"
@@ -109,16 +185,10 @@ router.post("/operate", async (ctx) => {
         `系統監測到有重複的用戶, 信息如下: ${res.userName} - ${res.userEmail}`
       );
     } else {
-      const doc = await Counter.findOneAndUpdate(
-        { _id: "userId" },
-        { $inc: { sequence_value: 1 } },
-        { new: true }
-      );
       try {
         const user = new User({
-          userId: doc.sequence_value,
+          userId,
           userName,
-          password: md5("123456"),
           userEmail,
           role: 1, //默認普通用戶
           roleList,
@@ -139,6 +209,15 @@ router.post("/operate", async (ctx) => {
       return;
     }
     try {
+      // EMAIL發送功能
+      const credentials = require("../config/credentials");
+      const emailService = require("../utils/email")(credentials);
+      emailService.send(
+        userEmail,
+        "Hood River tours on sale today!",
+        "Get 'em while they're hot!</br>"
+      );
+      // EMAIL發送功能
       const res = await User.findOneAndUpdate(
         { userId },
         { job, mobile, userName, userEmail, state, roleList, deptId }
@@ -154,6 +233,20 @@ router.post("/operate", async (ctx) => {
 router.get("/all/list", async (ctx) => {
   try {
     const list = await User.find({}, "userId userName userEmail");
+    ctx.body = util.success(list);
+  } catch (error) {
+    ctx.body = util.fail(error.stack);
+  }
+});
+
+// 按照部門獲取用戶列表
+router.get("/bydept/list", async (ctx) => {
+  try {
+    const { deptId } = ctx.request.query;
+    let list = await User.find({}, "userId userName userEmail deptId");
+    list = list.filter((item) => {
+      return item.deptId.includes(deptId);
+    });
     ctx.body = util.success(list);
   } catch (error) {
     ctx.body = util.fail(error.stack);

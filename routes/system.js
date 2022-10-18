@@ -13,7 +13,8 @@ router.get("/list", async (ctx) => {
     let params = {};
     if (type == "approve") {
       if (applyState == 1 || applyState == 2) {
-        params.curAuditUserName = data.userName;
+        //params.curAuditUserName = data.userName;
+        params.curAuditUserId = data.userId;
         params.$or = [{ applyState: 1 }, { applyState: 2 }];
       } else if (applyState > 2) {
         params = {
@@ -31,7 +32,6 @@ router.get("/list", async (ctx) => {
       };
       if (applyState) params.applyState = applyState;
     }
-
 
     const query = System.find(params);
     const list = await query.skip(skipIndex).limit(page.pageSize);
@@ -53,7 +53,6 @@ router.post("/operate", async (ctx) => {
     ctx.request.body;
   const authorization = ctx.request.headers.authorization;
   const { data } = util.decoded(authorization);
-
   if (action == "create") {
     // 生成申請單號
     let orderNo = "PS";
@@ -66,14 +65,25 @@ router.post("/operate", async (ctx) => {
     const id = data.deptId.pop();
     // 查找負責人信息
     const dept = await Dept.findById(id);
+
+    // 查找所有上級部門負責人
+    let deptgroupTemp = await Dept.find({
+      _id: { $in: dept.parentId.toString().split(",") },
+    });
+
+    const deptgroup = [];
+    for (let i = 0; i < 20; i++) {
+      deptgroupTemp.map((item) => {
+        if (item.parentId.length === i) {
+          deptgroup.unshift(item);
+        }
+      });
+    }
+
     // 填入申請單位
     params.deptName = dept.deptName;
     // 查找資訊單位主管
     const itLeader = await Dept.findOne({ deptName: "資訊部門" });
-    // 獲取總經理室信息
-    const userList = await Dept.find({
-      deptName: { $in: ["總經理室"] },
-    });
 
     let auditUsers = dept.userName;
     const auditFlows = [
@@ -83,24 +93,9 @@ router.post("/operate", async (ctx) => {
         userEmail: dept.userEmail,
       },
     ];
-    // 把資訊同仁的資訊推入審批流
-    auditFlows.push({
-      userId,
-      userName,
-      userEmail,
-    });
-    params.evaluatePersonId = userId;
-    params.evaluatePersonName = userName;
-    auditUsers += "," + userName;
-    // 把資訊主管的資訊推入審批流
-    auditFlows.push({
-      userId: itLeader.userId,
-      userName: itLeader.userName,
-      userEmail: itLeader.userEmail,
-    });
-    auditUsers += "," + itLeader.userName;
-    // 將總經理資訊推入審批流
-    userList.map((item) => {
+
+    // 將所有找出的部門負責人加入審批流
+    deptgroup.map((item) => {
       auditFlows.push({
         userId: item.userId,
         userName: item.userName,
@@ -109,7 +104,16 @@ router.post("/operate", async (ctx) => {
       auditUsers += "," + item.userName;
     });
 
+    // 把資訊主管的資訊推入審批流
+    auditFlows.push({
+      userId: itLeader.userId,
+      userName: itLeader.userName,
+      userEmail: itLeader.userEmail,
+    });
+    auditUsers += "," + itLeader.userName;
+
     params.auditUsers = auditUsers;
+    params.curAuditUserId = dept.userId;
     params.curAuditUserName = dept.userName;
     params.auditFlows = auditFlows;
     params.auditLogs = [];
@@ -147,7 +151,7 @@ router.post("/approve", async (ctx) => {
       params.applyState = 3;
     } else {
       // 審核通過
-      if (doc.auditFlows.length == doc.auditLogs.langth) {
+      if (doc.auditFlows.length == doc.auditLogs.length) {
         ctx.body = util.success("當前申請單已處理, 請勿重複提交");
         return;
       } else if (doc.auditFlows.length == doc.auditLogs.length + 1) {
@@ -156,6 +160,7 @@ router.post("/approve", async (ctx) => {
         params.applyState = 2;
         params.curAuditUserName =
           doc.auditFlows[doc.auditLogs.length + 1].userName;
+        params.curAuditUserId = doc.auditFlows[doc.auditLogs.length + 1].userId;
       }
     }
     auditLogs.push({
@@ -169,8 +174,44 @@ router.post("/approve", async (ctx) => {
     const res = await System.findByIdAndUpdate(_id, params);
     ctx.body = util.success("", "處理成功");
   } catch (error) {
-    ctx.body = util.fail(`查詢異常: ${error.message}`);
+    ctx.body = util.fail(`處理異常: ${error.message}`);
   }
 });
 
+// 加簽接口
+router.post("/addSignature", async (ctx) => {
+  const { _id, userId, userName, userEmail } = ctx.request.body;
+  let params = {};
+  try {
+    let doc = await System.findById(_id);
+    if (doc.auditFlows.length == doc.auditLogs.length) {
+      ctx.body = util.success("當前申請單已處理, 請勿重複操作");
+      return;
+    }
+    // 在 auditFlows 中找出與 curAuditUserId 相同的人並在後面加上加簽的 使用者資訊 
+    doc.auditFlows.map((item, index) => {
+      if (item.userId == doc.curAuditUserId) {
+        doc.auditFlows.splice(index + 1, 0, {
+          userId: userId,
+          userName: userName,
+          userEmail: userEmail,
+        });
+      }
+    });
+    // 在 auditUsers 中找出與 curAuditUserName 相同的人並在後面加上加簽的 userName 
+    let newAuditUsers = doc.auditUsers.split(",");
+    newAuditUsers.map((item, index) => {
+      if (item == doc.curAuditUserName) {
+        newAuditUsers.splice(index + 1, 0, userName);
+      }
+    });
+    newAuditUsers = newAuditUsers.toString();
+    params.auditFlows = doc.auditFlows;
+    params.auditUsers = newAuditUsers;
+    const res = await System.findByIdAndUpdate(_id, params);
+    ctx.body = util.success("", "處理成功");
+  } catch (error) {
+    ctx.body = util.fail(`處理異常: ${error.message}`);
+  }
+});
 module.exports = router;

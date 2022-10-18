@@ -123,7 +123,7 @@ router.post("/approve", async (ctx) => {
       params.applyState = 3;
     } else {
       // 審核通過
-      if (doc.auditFlows.length == doc.auditLogs.langth) {
+      if (doc.auditFlows.length == doc.auditLogs.length) {
         ctx.body = util.success("當前申請單已處理, 請勿重複提交");
         return;
       } else if (doc.auditFlows.length == doc.auditLogs.length + 1) {

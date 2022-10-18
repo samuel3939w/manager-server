@@ -27,6 +27,7 @@ const systemSchema = mongoose.Schema({
   },
   auditUsers: String,
   curAuditUserName: String,
+  curAuditUserId: String,
   auditFlows: [
     {
       userId: String,

@@ -63,4 +63,14 @@ router.post("/operate", async (ctx) => {
   }
 });
 
+// 所有部門名稱
+router.get("/all/list", async (ctx) => {
+  try {
+    const list = await Dept.find()
+    ctx.body = util.success(list);
+  } catch (error) {
+    ctx.body = util.fail(error.stack);
+  }
+});
+
 module.exports = router;

@@ -21,10 +21,13 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.0",
+    "ldapjs": "^2.3.3",
     "log4js": "^6.5.2",
     "md5": "^2.3.0",
     "mongoose": "^6.4.3",
-    "pug": "^2.0.3"
+    "nodemailer": "^6.7.8",
+    "pug": "^2.0.3",
+    "xoauth2": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

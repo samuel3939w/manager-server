@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  userId: Number, //用戶ID, 自增長
+  userId: String, //用戶ID, 自增長
   userName: String, //用戶名稱
-  password: String, //用戶密碼, md5加密
   userEmail: String, //用戶信箱
   mobile: String, //手機號碼
   sex: Number, //性別 0:男  1:女
