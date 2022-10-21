@@ -2,6 +2,12 @@ const router = require("koa-router")();
 const System = require("../models/systemSchema");
 const Dept = require("../models/deptSchema");
 const util = require("../utils/util");
+const fs = require("fs");
+const path = require("path");
+const koaBody = require("koa-body"); // npm i koa-body
+const { format } = require("date-fns"); // npm i date-fns
+const app = require("../app");
+const config = require("../config/index");
 router.prefix("/system");
 
 router.get("/list", async (ctx) => {
@@ -48,6 +54,78 @@ router.get("/list", async (ctx) => {
   }
 });
 
+router.post(
+  "/fileupload",
+  koaBody({
+    multipart: true, // 支持多文件上傳
+    encoding: "gzip", // 編碼格式
+    formidable: {
+      uploadDir: path.join(config.dirFilePath, "/public/upload"), // 設定文件上傳目錄
+      keepExtensions: true, // 保持文件的後墜
+      maxFieldsSize: 10 * 1024 * 1024, // 文件上傳大小限制
+      onFileBegin: (name, file) => {
+        // 無論是多文件還是單文件上傳都會重複調用此函數
+        // 最終要保存到的文件夾
+        const dirName = format(new Date(), "yyyyMMdd");
+        const dir = path.join(config.dirFilePath, `/public/upload/${dirName}`);
+        // 檢查文件夾是否存在如果不存在則新建文件夾
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir);
+        }
+        // 文件名稱去掉特殊字符但保留原始文件名稱
+        const fileName = file.originalFilename
+          .replace(" ", "_")
+          .replace(/[`~!@#$%^&*()|\-=?;:'",<>\{\}\\\/]/gi, "_");
+        file.name = fileName;
+        // 覆蓋文件存放的完整路徑(保留原始名稱)
+        file.filepath = `${dir}/${file.name}`;
+        file.path = `${dir}/${file.name}`;
+      },
+      onError: (error) => {
+        app.status = 400;
+        log4js.error(error);
+        // 這裡可以自己定義返回內容
+        app.body = { code: 400, msg: "上傳失敗", data: {} };
+        return;
+      },
+    },
+  }),
+  async (ctx) => {
+    try {
+      // 獲取上傳文件
+      const files = ctx.request.files;
+      // 正則 替換掉文件原始路徑中不需要的部分
+      const reg = new RegExp(".*/upload/", "g");
+      for (const fileKey in files) {
+        ctx.uploadpaths = ctx.uploadpaths ? ctx.uploadpaths : [];
+        ctx.uploadpaths.push({
+          name: files[fileKey].name,
+          url: files[fileKey].path.replace(reg, ""),
+        });
+      }
+      ctx.body = util.success(
+        { uploadpaths: ctx.uploadpaths },
+        "",
+        util.CODE.SUCCESS
+      );
+    } catch (error) {
+      ctx.status = 400;
+      ctx.body = util.fail("上傳失敗", util.CODE.ERROR);
+    }
+  }
+);
+
+router.post("/deleteFile", async (ctx) => {
+  const url = ctx.request.body.deleteUrl;
+
+  try {
+    await fs.unlinkSync(url);
+    ctx.body = util.success("", "刪除成功:" + url);
+  } catch (error) {
+    ctx.body = util.fail(`處理異常: ${error.message}`);
+  }
+});
+
 router.post("/operate", async (ctx) => {
   const { _id, action, userId, userName, userEmail, ...params } =
     ctx.request.body;
@@ -65,6 +143,7 @@ router.post("/operate", async (ctx) => {
     const id = data.deptId.pop();
     // 查找負責人信息
     const dept = await Dept.findById(id);
+    console.log('========================',dept);
 
     // 查找所有上級部門負責人
     let deptgroupTemp = await Dept.find({
@@ -124,6 +203,21 @@ router.post("/operate", async (ctx) => {
     };
 
     const res = await System.create(params);
+    // EMAIL發送功能
+    const credentials = require("../config/credentials");
+    const emailService = require("../utils/email")(credentials);
+    emailService.send(
+      dept.userEmail,
+      `${params.orderNo}系統機能增修申請單-${dept.userName}-已進入簽核，請進入系統確認`,
+      `<h4>系統機能增修申請單</h4><br>
+      表單編號 : ${params.orderNo}<br>
+      申請人 : ${data.userName}<br>
+      申請單位 : ${dept.deptName}<br>
+      需求類別 : ${params.type}<br>
+      <br><br>
+      `
+    );
+    // EMAIL發送功能
     ctx.body = util.success("", "創建成功");
   } else if (action == "edit") {
     await System.findByIdAndUpdate(_id, {
@@ -188,7 +282,7 @@ router.post("/addSignature", async (ctx) => {
       ctx.body = util.success("當前申請單已處理, 請勿重複操作");
       return;
     }
-    // 在 auditFlows 中找出與 curAuditUserId 相同的人並在後面加上加簽的 使用者資訊 
+    // 在 auditFlows 中找出與 curAuditUserId 相同的人並在後面加上加簽的 使用者資訊
     doc.auditFlows.map((item, index) => {
       if (item.userId == doc.curAuditUserId) {
         doc.auditFlows.splice(index + 1, 0, {
@@ -198,7 +292,7 @@ router.post("/addSignature", async (ctx) => {
         });
       }
     });
-    // 在 auditUsers 中找出與 curAuditUserName 相同的人並在後面加上加簽的 userName 
+    // 在 auditUsers 中找出與 curAuditUserName 相同的人並在後面加上加簽的 userName
     let newAuditUsers = doc.auditUsers.split(",");
     newAuditUsers.map((item, index) => {
       if (item == doc.curAuditUserName) {

@@ -209,15 +209,6 @@ router.post("/operate", async (ctx) => {
       return;
     }
     try {
-      // EMAIL發送功能
-      const credentials = require("../config/credentials");
-      const emailService = require("../utils/email")(credentials);
-      emailService.send(
-        userEmail,
-        "Hood River tours on sale today!",
-        "Get 'em while they're hot!</br>"
-      );
-      // EMAIL發送功能
       const res = await User.findOneAndUpdate(
         { userId },
         { job, mobile, userName, userEmail, state, roleList, deptId }

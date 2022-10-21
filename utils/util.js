@@ -3,6 +3,7 @@
  */
 const CODE = {
   SUCCESS: 200,
+  ERROR:400,
   PARAM_ERROR: 10001, // 參數錯誤
   USER_ACCOUNT_ERROR: 20001, // 帳號或密碼錯誤
   USER_LOGIN_ERROR: 30001, // 用戶未登入

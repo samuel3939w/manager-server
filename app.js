@@ -16,11 +16,22 @@ const roles = require("./routes/roles");
 const depts = require("./routes/depts");
 const leaves = require("./routes/leaves");
 const system = require("./routes/system");
+//const koaBody = require("koa-body");
 
 // error handler
 onerror(app);
 
 require("./config/db");
+
+// 檔案上傳
+// app.use(
+//   koaBody({
+//     multipart: true,
+//     formidable: {
+//       maxFileSize: 200 * 1024 * 1024, // 設定上傳檔案大小最大限制，預設2M
+//     },
+//   })
+// );
 
 // middlewares
 app.use(

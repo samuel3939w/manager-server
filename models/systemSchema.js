@@ -48,6 +48,10 @@ const systemSchema = mongoose.Schema({
     type: Number,
     default: 1,
   },
+  fileList:Array,
+  deadline:{
+    type: Date,
+  },
   updateTime: {
     type: Date,
     default: Date.now(),

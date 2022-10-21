@@ -1,1 +1,12 @@
 node版本使用12.19.0
+nginx.conf設定
+server {
+    listen       8100;
+    server_name  downloadFile;
+    root /Users/F10803/Desktop/manager-serve/public/upload;
+    autoindex on;
+    location / {
+      add_header Access-Control-Allow-Origin *;
+    }
+    add_header Cache-Control "no-cache, must-revalidate";
+}
