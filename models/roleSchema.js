@@ -9,11 +9,11 @@ const roleSchema = mongoose.Schema({
   },
   updateTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   },
   createTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   },
 });
 

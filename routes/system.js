@@ -59,10 +59,12 @@ router.post(
   koaBody({
     multipart: true, // 支持多文件上傳
     encoding: "gzip", // 編碼格式
+    formLimit:'1000mb',
+    jsonLimit:'1000mb',
     formidable: {
       uploadDir: path.join(config.dirFilePath, "/public/upload"), // 設定文件上傳目錄
       keepExtensions: true, // 保持文件的後墜
-      maxFieldsSize: 10 * 1024 * 1024, // 文件上傳大小限制
+      maxFieldsSize: 200 * 1024 * 1024, // 文件上傳大小限制
       onFileBegin: (name, file) => {
         // 無論是多文件還是單文件上傳都會重複調用此函數
         // 最終要保存到的文件夾
@@ -143,7 +145,6 @@ router.post("/operate", async (ctx) => {
     const id = data.deptId.pop();
     // 查找負責人信息
     const dept = await Dept.findById(id);
-    console.log('========================',dept);
 
     // 查找所有上級部門負責人
     let deptgroupTemp = await Dept.find({
@@ -209,7 +210,7 @@ router.post("/operate", async (ctx) => {
     emailService.send(
       dept.userEmail,
       `${params.orderNo}系統機能增修申請單-${dept.userName}-已進入簽核，請進入系統確認`,
-      `<h4>系統機能增修申請單</h4><br>
+      `<h4>系統機能增修申請單</h4>
       表單編號 : ${params.orderNo}<br>
       申請人 : ${data.userName}<br>
       申請單位 : ${dept.deptName}<br>
@@ -217,7 +218,7 @@ router.post("/operate", async (ctx) => {
       <br><br>
       `
     );
-    // EMAIL發送功能
+
     ctx.body = util.success("", "創建成功");
   } else if (action == "edit") {
     await System.findByIdAndUpdate(_id, {
@@ -250,11 +251,62 @@ router.post("/approve", async (ctx) => {
         return;
       } else if (doc.auditFlows.length == doc.auditLogs.length + 1) {
         params.applyState = 4;
+        // EMAIL發送功能
+        const credentials = require("../config/credentials");
+        const emailService = require("../utils/email")(credentials);
+
+        doc.auditFlows.forEach((item) => {
+          emailService.send(
+            item.userEmail,
+            `${doc.orderNo}系統機能增修申請單-${doc.applyUser.userName}-已完成流程(結案)`,
+            `<h4>系統機能增修申請單</h4>
+            表單編號 : ${doc.orderNo}<br>
+            申請人 : ${doc.applyUser.userName}<br>
+            申請單位 : ${doc.deptName}<br>
+            需求類別 : ${doc.type}<br>
+            預估工時 : ${doc.workhours}<br>
+            核決結果 : 同意開發<br>
+            <br><br>
+            `
+          );
+        });
+
+        emailService.send(
+          doc.applyUser.userEmail,
+          `${doc.orderNo}系統機能增修申請單-${doc.applyUser.userName}-已完成流程(結案)`,
+          `<h4>系統機能增修申請單</h4>
+          表單編號 : ${doc.orderNo}<br>
+          申請人 : ${doc.applyUser.userName}<br>
+          申請單位 : ${doc.deptName}<br>
+          需求類別 : ${doc.type}<br>
+          預估工時 : ${doc.workhours}<br>
+          核決結果 : 同意開發<br>
+          <br><br>
+          `
+        );
       } else if (doc.auditFlows.length > doc.auditLogs.length) {
         params.applyState = 2;
         params.curAuditUserName =
           doc.auditFlows[doc.auditLogs.length + 1].userName;
         params.curAuditUserId = doc.auditFlows[doc.auditLogs.length + 1].userId;
+
+        // EMAIL發送功能
+        const credentials = require("../config/credentials");
+        const emailService = require("../utils/email")(credentials);
+
+        emailService.send(
+          doc.auditFlows[doc.auditLogs.length + 1].userEmail,
+          `${doc.orderNo}系統機能增修申請單-${
+            doc.auditFlows[doc.auditLogs.length + 1].userName
+          }-已進入簽核，請進入系統確認`,
+          `<h4>系統機能增修申請單</h4>
+          表單編號 : ${doc.orderNo}<br>
+          申請人 : ${doc.applyUser.userName}<br>
+          申請單位 : ${doc.deptName}<br>
+          需求類別 : ${doc.type}<br>
+          <br><br>
+          `
+        );
       }
     }
     auditLogs.push({

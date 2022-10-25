@@ -8,12 +8,12 @@ const deptSchema = mongoose.Schema({
   parentId: [mongoose.Types.ObjectId],
   updateTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   },
   createTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   },
 });
 
-module.exports = mongoose.model("depts", deptSchema,"depts");
+module.exports = mongoose.model("depts", deptSchema, "depts");

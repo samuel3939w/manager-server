@@ -11,11 +11,11 @@ const menuSchema = mongoose.Schema({
   parentId: [mongoose.Types.ObjectId],
   createTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   }, //創建時間
   upadateTime: {
     type: Date,
-    default: Date.now(),
+    default: () => Date.now(),
   }, //更新時間
 });
 

@@ -195,7 +195,7 @@ router.post("/operate", async (ctx) => {
           job,
           state,
           deptId,
-          mobile,
+          mobile
         });
         user.save();
         ctx.body = util.success({}, "用戶創建成功");

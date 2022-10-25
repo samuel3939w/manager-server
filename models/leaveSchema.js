@@ -5,11 +5,11 @@ const leaveSchema = mongoose.Schema({
   applyType: Number,
   startTime: {
     type: Date,
-    default: Date.now,
+    default: () => Date.now(),
   },
   endTime: {
     type: Date,
-    default: Date.now,
+    default: () => Date.now(),
   },
   applyUser: {
     userId: String,
@@ -42,7 +42,7 @@ const leaveSchema = mongoose.Schema({
   },
   createTime: {
     type: Date,
-    default: Date.now,
+    default: () => Date.now(),
   },
 });
 
