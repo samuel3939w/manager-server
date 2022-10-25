@@ -195,7 +195,7 @@ router.post("/operate", async (ctx) => {
           job,
           state,
           deptId,
-          mobile
+          mobile,
         });
         user.save();
         ctx.body = util.success({}, "用戶創建成功");
@@ -213,6 +213,16 @@ router.post("/operate", async (ctx) => {
         { userId },
         { job, mobile, userName, userEmail, state, roleList, deptId }
       );
+      // 查找用戶是否為部門負責人，如果是的話就要更改部門負責人 EMAIL
+
+      await Dept.findOneAndUpdate(
+        { userId },
+        {
+          userEmail,
+          userName,
+        }
+      );
+
       ctx.body = util.success({}, "更新成功");
     } catch (error) {
       ctx.body = util.fail(error.stack, "更新失敗");
