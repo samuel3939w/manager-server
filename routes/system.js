@@ -10,6 +10,20 @@ const app = require("../app");
 const config = require("../config/index");
 router.prefix("/system");
 
+router.get("/findOne", async (ctx) => {
+  const { id } = ctx.request.query;
+  const authorization = ctx.request.headers.authorization;
+  const { data } = util.decoded(authorization);
+  try {
+    const systemInfo =await System.findById(id)
+    ctx.body = util.success({
+      systemInfo,
+    });
+  } catch (error) {
+    ctx.body = util.fail(`查詢失敗:${error.stack}`);
+  }
+});
+
 router.get("/list", async (ctx) => {
   const { applyState, type } = ctx.request.query;
   const { page, skipIndex } = util.pager(ctx.request.query);
@@ -59,8 +73,8 @@ router.post(
   koaBody({
     multipart: true, // 支持多文件上傳
     encoding: "gzip", // 編碼格式
-    formLimit:'1000mb',
-    jsonLimit:'1000mb',
+    formLimit: "1000mb",
+    jsonLimit: "1000mb",
     formidable: {
       uploadDir: path.join(config.dirFilePath, "/public/upload"), // 設定文件上傳目錄
       keepExtensions: true, // 保持文件的後墜

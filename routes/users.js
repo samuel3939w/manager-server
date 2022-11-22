@@ -214,7 +214,6 @@ router.post("/operate", async (ctx) => {
         { job, mobile, userName, userEmail, state, roleList, deptId }
       );
       // 查找用戶是否為部門負責人，如果是的話就要更改部門負責人 EMAIL
-
       await Dept.findOneAndUpdate(
         { userId },
         {
