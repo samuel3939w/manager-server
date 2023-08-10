@@ -1,0 +1,428 @@
+[{
+  "_id": {
+    "$oid": "62cf9330a760db03fd54e72d"
+  },
+  "userId": "100005",
+  "userName": "蕭副理",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "monte@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62d7be1227e4d34caffcfc94"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d4dad17cc2e2dfd0dd2",
+    "62d66dc4ad17cc2e2dfd0dff"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62cf9399a760db03fd54e738"
+  },
+  "userId": "100006",
+  "userName": "sam",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "samuelchen@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62d7be1227e4d34caffcfc94",
+    "62d8c254d42d5f52303d0982"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d4dad17cc2e2dfd0dd2",
+    "62d66dc4ad17cc2e2dfd0dff"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62cf9498a760db03fd54e754"
+  },
+  "userId": "100007",
+  "userName": "qwe",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "qwe@pro-partner.com.tw",
+  "deptId": [
+    "60167059c9027b7d2c520a61"
+  ],
+  "state": 2,
+  "role": 1,
+  "roleList": [],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62cf94c6a760db03fd54e762"
+  },
+  "userId": "100008",
+  "userName": "張課長",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "samuelchen@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62d8bd6477de452c4d4bf671"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66da4ad17cc2e2dfd0df1"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "__v": 0,
+  "mobile": "0912345678"
+},{
+  "_id": {
+    "$oid": "62cfcffca760db03fd54e7cb"
+  },
+  "userId": "100009",
+  "userName": "admin",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "monte@pro-partner.com.tw",
+  "deptId": [
+    "60167059c9027b7d2c520a61"
+  ],
+  "state": 1,
+  "role": 0,
+  "roleList": [
+    "62d66d4dad17cc2e2dfd0dd2"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1657770771652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0e50522f4c3ee9ae19d10"
+  },
+  "userId": "100010",
+  "userName": "人事",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "proadmin@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62e0e56f22f4c3ee9ae19d20"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66dbfad17cc2e2dfd0dfb"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0e53322f4c3ee9ae19d17"
+  },
+  "userId": "100011",
+  "userName": "人事2",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "proadmin@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91"
+  ],
+  "state": 2,
+  "role": 1,
+  "roleList": [
+    "62d66dbfad17cc2e2dfd0dfb"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0e5c922f4c3ee9ae19d37"
+  },
+  "userId": "100012",
+  "userName": "財會",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "samuelchen@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62e0e59322f4c3ee9ae19d23"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d92ad17cc2e2dfd0de9"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1658905562887"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ea29c4aa5cb99e52c39aca"
+  },
+  "userId": "100013",
+  "userName": "美金",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "monte@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0"
+  ],
+  "job": "總經理",
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d74ad17cc2e2dfd0ddd"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659511646517"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1659511646517"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8d6f4ebd498e65da8edd"
+  },
+  "userId": "100014",
+  "userName": "邱副理",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "qweasd@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62eb8d884ebd498e65da8ee3"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d7cad17cc2e2dfd0de1"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8e114ebd498e65da8eff"
+  },
+  "userId": "100015",
+  "userName": "洪律師",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "1111@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62eb8db74ebd498e65da8ef2"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66db4ad17cc2e2dfd0df5"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8e534ebd498e65da8f08"
+  },
+  "userId": "100016",
+  "userName": "林副理",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "2222@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62eb8dd54ebd498e65da8ef5"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66dbfad17cc2e2dfd0dfb"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1659583658944"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb91ce0eaa9895d5945642"
+  },
+  "userId": "100017",
+  "userName": "謝正倫",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "userEmail": "SamuelChen@pro-partner.com.tw",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62d8bd6477de452c4d4bf671"
+  ],
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66da4ad17cc2e2dfd0df1"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659605417206"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1659605417206"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63194586c079d8fd4969beb5"
+  },
+  "userId": "F10803",
+  "userName": "陳彥齊",
+  "userEmail": "SamuelChen@pro-partner.com.tw",
+  "mobile": "",
+  "deptId": [
+    "62d7bdfd27e4d34caffcfc91",
+    "62ea29d9aa5cb99e52c39ad0",
+    "62d7be1227e4d34caffcfc94",
+    "62d8c254d42d5f52303d0982"
+  ],
+  "job": "程式設計師",
+  "state": 1,
+  "role": 1,
+  "roleList": [
+    "62d66d4dad17cc2e2dfd0dd2",
+    "62d66dc4ad17cc2e2dfd0dff"
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1662600556868"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1662600556868"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6329219d6219fda0c192d821"
+  },
+  "userId": "F10506",
+  "userName": "蕭仲豪",
+  "userEmail": "monte@pro-partner.com.tw",
+  "mobile": "",
+  "deptId": [],
+  "job": "副理",
+  "state": 1,
+  "role": 1,
+  "roleList": [],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1663639932380"
+    }
+  },
+  "lastLoginTime": {
+    "$date": {
+      "$numberLong": "1663639932380"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,737 @@
+[{
+  "_id": {
+    "$oid": "63573b2e547b091831f2656e"
+  },
+  "orderNo": "PS202210250",
+  "deptName": "資訊部門",
+  "urgentLevel": "急迫",
+  "type": "現行系統資料異動調整",
+  "reasons": "fff",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573b2e547b091831f2656f"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573b2e547b091831f26570"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573b2e547b091831f26571"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573b2e547b091831f26572"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1666800000000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666661026758"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1666661026758"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63573c3cddd43cd3d4c6387a"
+  },
+  "orderNo": "PS202210251",
+  "deptName": "資訊部門",
+  "urgentLevel": "一般",
+  "type": "現行系統功能增修",
+  "reasons": "ccc",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573c3cddd43cd3d4c6387b"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573c3cddd43cd3d4c6387c"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573c3cddd43cd3d4c6387d"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63573c3cddd43cd3d4c6387e"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1666713600000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666661436591"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1666661436591"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63577c5632ac6b65018ba23e"
+  },
+  "orderNo": "PS202210252",
+  "deptName": "資訊部門",
+  "urgentLevel": "急迫",
+  "type": "現行系統功能增修",
+  "reasons": "ccc",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577c5632ac6b65018ba23f"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577c5632ac6b65018ba240"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577c5632ac6b65018ba241"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577c5632ac6b65018ba242"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1666713600000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666677846944"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1666677846944"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637af479f8a1f336fabbcc07"
+  },
+  "orderNo": "PS202211213",
+  "deptName": "資訊部門",
+  "urgentLevel": "一般",
+  "type": "現行系統功能增修",
+  "reasons": "fffff",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 100,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637af479f8a1f336fabbcc08"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637af479f8a1f336fabbcc09"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637af479f8a1f336fabbcc0a"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637af479f8a1f336fabbcc0b"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669002374169"
+        }
+      },
+      "remark": "ff",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637af486f8a1f336fabbcc13"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669002498279"
+        }
+      },
+      "remark": "good",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637af502f8a1f336fabbcc25"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669003265354"
+        }
+      },
+      "remark": "good",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637af801f8a1f336fabbcc5b"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669004891567"
+        }
+      },
+      "remark": "dasd",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637afe5bf8a1f336fabbcca8"
+      }
+    }
+  ],
+  "applyState": 4,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1669046400000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1669002361307"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1669002361307"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637b2fd1b910742f7b3dd8cb"
+  },
+  "orderNo": "PS202211214",
+  "deptName": "資訊部門",
+  "urgentLevel": "急迫",
+  "type": "現行系統功能增修",
+  "reasons": "vvv",
+  "evaluateResult": "【本集相關連結】\n🙋 FTX 受害群組 👉https://t.me/+CypmKNepsP5jNGJl\n🙋 FTX 事件重要消息整理 👉 https://t.me/+PY8qU3cb1PhhYWM9",
+  "evaluateInstruction": "❤️ 這裡購買 CoolWallet 冷錢包並在結帳時輸入折扣碼：「幣癌」，獲得 5% 折扣",
+  "workhours": 90,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b2fd1b910742f7b3dd8cc"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b2fd1b910742f7b3dd8cd"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b2fd1b910742f7b3dd8ce"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b2fd1b910742f7b3dd8cf"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1669132800000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1669017553435"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1669017553435"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637b33a0b910742f7b3dd9ba"
+  },
+  "orderNo": "PS202211215",
+  "deptName": "資訊部門",
+  "urgentLevel": "一般",
+  "type": "現行系統功能增修",
+  "reasons": "cccc",
+  "evaluateResult": "【本集相關連結】\n🙋 FTX 受害群組 👉https://t.me/+CypmKNepsP5jNGJl\n🙋 FTX 事件重要消息整理 👉 https://t.me/+PY8qU3cb1PhhYWM9",
+  "evaluateInstruction": "❤️ 這裡購買 CoolWallet 冷錢包並在結帳時輸入折扣碼：「幣癌」，獲得 5% 折扣",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b33a0b910742f7b3dd9bb"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b33a0b910742f7b3dd9bc"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b33a0b910742f7b3dd9bd"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b33a0b910742f7b3dd9be"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669018714183"
+        }
+      },
+      "remark": "c",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637b345ab910742f7b3dd9e1"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669018740879"
+        }
+      },
+      "remark": "dddd",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637b3474b910742f7b3dd9ef"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669018755257"
+        }
+      },
+      "remark": "ccc",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637b3483b910742f7b3dd9fb"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669018771748"
+        }
+      },
+      "remark": "cccc",
+      "action": "審核拒絕",
+      "_id": {
+        "$oid": "637b3493b910742f7b3dda09"
+      }
+    }
+  ],
+  "applyState": 3,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1669132800000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1669018528065"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1669018528065"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637b362ab910742f7b3dda4f"
+  },
+  "orderNo": "PS202211216",
+  "deptName": "資訊部門",
+  "urgentLevel": "一般",
+  "type": "現行系統功能增修",
+  "reasons": "fsdf",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "美金",
+  "curAuditUserId": "100013",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b362ab910742f7b3dda50"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b362ab910742f7b3dda51"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b362ab910742f7b3dda52"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b362ab910742f7b3dda53"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669019197476"
+        }
+      },
+      "remark": "sdfsdf",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "637b363db910742f7b3dda5b"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1669019214715"
+        }
+      },
+      "remark": "不行",
+      "action": "審核拒絕",
+      "_id": {
+        "$oid": "637b364eb910742f7b3dda67"
+      }
+    }
+  ],
+  "applyState": 3,
+  "fileList": [
+    {
+      "name": "0a036cb4d88316521893b0560bf23c1c.jpeg",
+      "url": "20221121/0a036cb4d88316521893b0560bf23c1c.jpeg"
+    },
+    {
+      "name": "6fb2868579e0c22a7f316f6df18185b6.jpeg",
+      "url": "20221121/6fb2868579e0c22a7f316f6df18185b6.jpeg"
+    }
+  ],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1669046400000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1669019178388"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1669019178388"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637b3c85b910742f7b3ddad6"
+  },
+  "orderNo": "PS202211217",
+  "deptName": "資訊部門",
+  "urgentLevel": "一般",
+  "type": "現行系統功能增修",
+  "reasons": "14141",
+  "evaluateResult": "",
+  "evaluateInstruction": "",
+  "workhours": 0,
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "auditUsers": "蕭副理,美金,admin,蕭副理",
+  "curAuditUserName": "蕭副理",
+  "curAuditUserId": "100005",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "monte@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b3c85b910742f7b3ddad7"
+      }
+    },
+    {
+      "userId": "100013",
+      "userName": "美金",
+      "userEmail": "monte@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b3c85b910742f7b3ddad8"
+      }
+    },
+    {
+      "userId": "100009",
+      "userName": "admin",
+      "userEmail": "monte@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b3c85b910742f7b3ddad9"
+      }
+    },
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "monte@pro-partner.com.tw",
+      "_id": {
+        "$oid": "637b3c85b910742f7b3ddada"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 1,
+  "fileList": [],
+  "deadline": {
+    "$date": {
+      "$numberLong": "1668960000000"
+    }
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1669020805675"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1669020805675"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,893 @@
+[{
+  "_id": {
+    "$oid": "62d4d6b486a2cfaa22fed37f"
+  },
+  "menuType": 1,
+  "menuName": "系統管理",
+  "menuState": 1,
+  "parentId": [
+    null
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "__v": 0,
+  "icon": "el-icon-setting",
+  "path": "/system"
+},{
+  "_id": {
+    "$oid": "62d4d70c86a2cfaa22fed38a"
+  },
+  "menuType": 1,
+  "menuName": "用戶管理",
+  "path": "/system/user",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "__v": 0,
+  "component": "User"
+},{
+  "_id": {
+    "$oid": "62d4d74486a2cfaa22fed38d"
+  },
+  "menuType": 1,
+  "menuName": "審核管理",
+  "path": "/apply",
+  "icon": "el-icon-s-promotion",
+  "menuState": 1,
+  "parentId": [
+    null
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658115364644"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d4f886ca0a08614eb9b3ab"
+  },
+  "menuType": 2,
+  "menuName": "查看",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4d70c86a2cfaa22fed38a"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658124038287"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658124038287"
+    }
+  },
+  "__v": 0,
+  "menuCode": "user-query"
+},{
+  "_id": {
+    "$oid": "62d4fd9ed71a6c37f25fd229"
+  },
+  "menuType": 1,
+  "menuName": "菜單管理",
+  "path": "/system/menu",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658125111882"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658125111882"
+    }
+  },
+  "__v": 0,
+  "component": "Menu"
+},{
+  "_id": {
+    "$oid": "62d4fdd4d71a6c37f25fd231"
+  },
+  "menuType": 1,
+  "menuName": "角色管理",
+  "path": "/system/role",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658125111882"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658125111882"
+    }
+  },
+  "__v": 0,
+  "component": "Role"
+},{
+  "_id": {
+    "$oid": "62d7604d5e3558a696a8d8fa"
+  },
+  "menuType": 1,
+  "menuName": "部門管理",
+  "path": "/system/dept",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658282010207"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658282010207"
+    }
+  },
+  "__v": 0,
+  "component": "Dept"
+},{
+  "_id": {
+    "$oid": "62d90d12e06fda03aca789e4"
+  },
+  "menuType": 2,
+  "menuName": "新增",
+  "menuCode": "user-create",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4d70c86a2cfaa22fed38a"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90d28e06fda03aca789e7"
+  },
+  "menuType": 2,
+  "menuName": "編輯",
+  "menuCode": "user-edit",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4d70c86a2cfaa22fed38a"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90d52e06fda03aca789ef"
+  },
+  "menuType": 2,
+  "menuName": "刪除",
+  "menuCode": "user-delete",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4d70c86a2cfaa22fed38a"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90d62e06fda03aca789f2"
+  },
+  "menuType": 2,
+  "menuName": "批量刪除",
+  "menuCode": "user-patch-delete",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4d70c86a2cfaa22fed38a"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90d93e06fda03aca789f8"
+  },
+  "menuType": 2,
+  "menuName": "查看",
+  "menuCode": "menu-query",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fd9ed71a6c37f25fd229"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90da7e06fda03aca789fb"
+  },
+  "menuType": 2,
+  "menuName": "新增",
+  "menuCode": "menu-create",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fd9ed71a6c37f25fd229"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90db6e06fda03aca789fe"
+  },
+  "menuType": 2,
+  "menuName": "編輯",
+  "menuCode": "menu-edit",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fd9ed71a6c37f25fd229"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90dc1e06fda03aca78a01"
+  },
+  "menuType": 2,
+  "menuName": "刪除",
+  "menuCode": "menu-delete",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fd9ed71a6c37f25fd229"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658220978578"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90df8e06fda03aca78a08"
+  },
+  "menuType": 2,
+  "menuName": "查看",
+  "menuCode": "role-query",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fdd4d71a6c37f25fd231"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90e0ce06fda03aca78a0b"
+  },
+  "menuType": 2,
+  "menuName": "創建",
+  "menuCode": "role-create",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fdd4d71a6c37f25fd231"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90e1ce06fda03aca78a0e"
+  },
+  "menuType": 2,
+  "menuName": "編輯",
+  "menuCode": "role-edit",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fdd4d71a6c37f25fd231"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90e49e06fda03aca78a17"
+  },
+  "menuType": 2,
+  "menuName": "設置權限",
+  "menuCode": "role-setting",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fdd4d71a6c37f25fd231"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90e56e06fda03aca78a1a"
+  },
+  "menuType": 2,
+  "menuName": "刪除",
+  "menuCode": "role-delete",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d4fdd4d71a6c37f25fd231"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d90e6fe06fda03aca78a1d"
+  },
+  "menuType": 2,
+  "menuName": "查看",
+  "menuCode": "dept-query",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d7604d5e3558a696a8d8fa"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d9127fe06fda03aca78a23"
+  },
+  "menuType": 2,
+  "menuName": "創建",
+  "menuCode": "dept-create",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d7604d5e3558a696a8d8fa"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d91291e06fda03aca78a26"
+  },
+  "menuType": 2,
+  "menuName": "編輯",
+  "menuCode": "dept-edit",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d7604d5e3558a696a8d8fa"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d912a0e06fda03aca78a29"
+  },
+  "menuType": 2,
+  "menuName": "刪除",
+  "menuCode": "dept-delete",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d6b486a2cfaa22fed37f"
+    },
+    {
+      "$oid": "62d7604d5e3558a696a8d8fa"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658389445858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d920d42b284432758a4662"
+  },
+  "menuType": 1,
+  "menuName": "請假申請",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658396752007"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658396752007"
+    }
+  },
+  "__v": 0,
+  "path": "/audit/leave",
+  "component": "Leave"
+},{
+  "_id": {
+    "$oid": "62de42f413d4ee5bf02535ff"
+  },
+  "menuType": 2,
+  "menuName": "新增",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62d920d42b284432758a4662"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658733029479"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658733029479"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0f58dc1f6eb6d4c0bdb95"
+  },
+  "menuType": 1,
+  "menuName": "待審核",
+  "path": "/audit/approve",
+  "component": "Approve",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0f5aec1f6eb6d4c0bdb98"
+  },
+  "menuType": 2,
+  "menuName": "查看",
+  "menuCode": "approve-query",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62e0f58dc1f6eb6d4c0bdb95"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0f5ccc1f6eb6d4c0bdb9b"
+  },
+  "menuType": 2,
+  "menuName": "審核",
+  "menuCode": "approve-check",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62e0f58dc1f6eb6d4c0bdb95"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1658909506780"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e3922c9d1ee2003ea8bd7c"
+  },
+  "menuType": 1,
+  "menuName": "系統機能增修",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659068523822"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1659068523822"
+    }
+  },
+  "__v": 0,
+  "component": "System",
+  "path": "/audit/system"
+},{
+  "_id": {
+    "$oid": "62e393619d1ee2003ea8bda0"
+  },
+  "menuType": 2,
+  "menuName": "新增",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62e3922c9d1ee2003ea8bd7c"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659068523822"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1659068523822"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb92f80eaa9895d594567b"
+  },
+  "menuType": 1,
+  "menuName": "系統機能增修待審核",
+  "path": "/audit/systemApprove",
+  "component": "SystemApprove",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659605417219"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1659605417219"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb932c0eaa9895d594569f"
+  },
+  "menuType": 2,
+  "menuName": "新增",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62eb92f80eaa9895d594567b"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659605417219"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1659605417219"
+    }
+  },
+  "__v": 0,
+  "menuCode": "system-create"
+},{
+  "_id": {
+    "$oid": "62ecb47b24bca85133fc1697"
+  },
+  "menuType": 2,
+  "menuName": "編輯",
+  "menuCode": "system-edit",
+  "menuState": 1,
+  "parentId": [
+    {
+      "$oid": "62d4d74486a2cfaa22fed38d"
+    },
+    {
+      "$oid": "62eb92f80eaa9895d594567b"
+    }
+  ],
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659679567478"
+    }
+  },
+  "upadateTime": {
+    "$date": {
+      "$numberLong": "1659679567478"
+    }
+  },
+  "__v": 0
+}]

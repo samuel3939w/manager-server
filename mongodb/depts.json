@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "62d7bdfd27e4d34caffcfc91"
+  },
+  "deptName": "葡眾企業股份有限公司",
+  "userId": "100009",
+  "userName": "admin",
+  "userEmail": "monte@pro-partner.com.tw",
+  "parentId": [
+    null
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666590881328"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d7be1227e4d34caffcfc94"
+  },
+  "deptName": "資訊部門",
+  "userId": "100005",
+  "userName": "蕭副理",
+  "userEmail": "monte@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666676122334"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d8bd6477de452c4d4bf671"
+  },
+  "deptName": "行銷部門",
+  "userId": "100008",
+  "userName": "張課長",
+  "userEmail": "samuelchen@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666343617919"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d8c254d42d5f52303d0982"
+  },
+  "deptName": "系統管理課",
+  "userId": "F10803",
+  "userName": "陳彥齊",
+  "userEmail": "SamuelChen@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    },
+    {
+      "$oid": "62d7be1227e4d34caffcfc94"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1665640669039"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0e56f22f4c3ee9ae19d20"
+  },
+  "deptName": "人事部門",
+  "userId": "100010",
+  "userName": "人事",
+  "userEmail": "proadmin@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1662538852980"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e0e59322f4c3ee9ae19d23"
+  },
+  "deptName": "財會部",
+  "userId": "100012",
+  "userName": "財會",
+  "userEmail": "samuelchen@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666590785703"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658305787106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ea29d9aa5cb99e52c39ad0"
+  },
+  "deptName": "總經理室",
+  "userId": "100013",
+  "userName": "美金",
+  "userEmail": "monte@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666590354208"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659511646529"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8d884ebd498e65da8ee3"
+  },
+  "deptName": "顧客服務部",
+  "userId": "100014",
+  "userName": "邱副理",
+  "userEmail": "qweasd@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659583658972"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658972"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8db74ebd498e65da8ef2"
+  },
+  "deptName": "法務室",
+  "userId": "100015",
+  "userName": "洪律師",
+  "userEmail": "1111@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659604637798"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658972"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62eb8dd54ebd498e65da8ef5"
+  },
+  "deptName": "管理處",
+  "userId": "100016",
+  "userName": "林副理",
+  "userEmail": "2222@pro-partner.com.tw",
+  "parentId": [
+    {
+      "$oid": "62d7bdfd27e4d34caffcfc91"
+    },
+    {
+      "$oid": "62ea29d9aa5cb99e52c39ad0"
+    }
+  ],
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659604642516"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659583658972"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,1057 @@
+[{
+  "_id": {
+    "$oid": "62e35340a098cf54b5c8b26c"
+  },
+  "orderNo": "XJ202207290",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659024000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659196800000"
+    }
+  },
+  "applyUser": {
+    "userId": "100006",
+    "userName": "sam",
+    "userEmail": "sam@pro-partner.com.tw"
+  },
+  "leaveTime": "3天",
+  "reasons": "sdfsdf",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35340a098cf54b5c8b26d"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35340a098cf54b5c8b26e"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35340a098cf54b5c8b26f"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659065206602"
+        }
+      },
+      "remark": "駁回",
+      "action": "審核拒絕",
+      "_id": {
+        "$oid": "62e35376a098cf54b5c8b299"
+      }
+    }
+  ],
+  "applyState": 3,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659065152410"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e3534ea098cf54b5c8b276"
+  },
+  "orderNo": "XJ202207291",
+  "applyType": 3,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659024000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659974400000"
+    }
+  },
+  "applyUser": {
+    "userId": "100006",
+    "userName": "sam",
+    "userEmail": "sam@pro-partner.com.tw"
+  },
+  "leaveTime": "12天",
+  "reasons": "sdfsdfdsf",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "財會",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e3534ea098cf54b5c8b277"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e3534ea098cf54b5c8b278"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e3534ea098cf54b5c8b279"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068278771"
+        }
+      },
+      "remark": "可以",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "62e35f760ff0bb7386ef4030"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068302578"
+        }
+      },
+      "remark": "可以",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "62e35f8e0ff0bb7386ef403d"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068328785"
+        }
+      },
+      "remark": "沒問題",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "62e35fa80ff0bb7386ef404b"
+      }
+    }
+  ],
+  "applyState": 4,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659065166454"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e35355a098cf54b5c8b280"
+  },
+  "orderNo": "XJ202207292",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659024000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659024000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100006",
+    "userName": "sam",
+    "userEmail": "sam@pro-partner.com.tw"
+  },
+  "leaveTime": "1天",
+  "reasons": "sdfsdfsdf",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "財會",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35355a098cf54b5c8b281"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35355a098cf54b5c8b282"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35355a098cf54b5c8b283"
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068353069"
+        }
+      },
+      "remark": "ddd",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "62e35fc10ff0bb7386ef405c"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068367290"
+        }
+      },
+      "remark": "可以",
+      "action": "審核通過",
+      "_id": {
+        "$oid": "62e35fcf0ff0bb7386ef4069"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "createTime": {
+        "$date": {
+          "$numberLong": "1659068385075"
+        }
+      },
+      "remark": "不准",
+      "action": "審核拒絕",
+      "_id": {
+        "$oid": "62e35fe10ff0bb7386ef4077"
+      }
+    }
+  ],
+  "applyState": 3,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659065173985"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e35361a098cf54b5c8b28a"
+  },
+  "orderNo": "XJ202207293",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659024000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659196800000"
+    }
+  },
+  "applyUser": {
+    "userId": "100006",
+    "userName": "sam",
+    "userEmail": "sam@pro-partner.com.tw"
+  },
+  "leaveTime": "3天",
+  "reasons": "sdfsdfsdf",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35361a098cf54b5c8b28b"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35361a098cf54b5c8b28c"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e35361a098cf54b5c8b28d"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 1,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659065185743"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8bc677bc15e5ac1115eab"
+  },
+  "orderNo": "XJ202208024",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "fff",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8bc677bc15e5ac1115eac"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8bc677bc15e5ac1115ead"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8bc677bc15e5ac1115eae"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659419751205"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e4d6ae64e07b19826296"
+  },
+  "orderNo": "XJ202208025",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659542400000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "fff",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e4d6ae64e07b19826297"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e4d6ae64e07b19826298"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430102032"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e531171421d91ab4c688"
+  },
+  "orderNo": "XJ202208026",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "ddd",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e531171421d91ab4c689"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e531171421d91ab4c68a"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430193948"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e57528a037e06f21c9d8"
+  },
+  "orderNo": "XJ202208027",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "sss",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e57528a037e06f21c9d9"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e57528a037e06f21c9da"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430261628"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e5aa0247e6b9b16d2c69"
+  },
+  "orderNo": "XJ202208028",
+  "applyType": 3,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "cc",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e5aa0247e6b9b16d2c6a"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e5aa0247e6b9b16d2c6b"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430314787"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e6aa0ca661e205ae36a4"
+  },
+  "orderNo": "XJ202208029",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "fff",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e6aa0ca661e205ae36a5"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e6aa0ca661e205ae36a6"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430570377"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e709087dff84a6f2f197"
+  },
+  "orderNo": "XJ2022080210",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1660060800000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1660147200000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "cc",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e709087dff84a6f2f198"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e709087dff84a6f2f199"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659430665296"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e8a17f8308b91f5ce46f"
+  },
+  "orderNo": "XJ2022080211",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "1天",
+  "reasons": "123",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8a17f8308b91f5ce470"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8a17f8308b91f5ce471"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8a17f8308b91f5ce472"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659431073642"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e8ec7f8308b91f5ce481"
+  },
+  "orderNo": "XJ2022080212",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1660060800000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1660147200000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "xx",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8ec7f8308b91f5ce482"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8ec7f8308b91f5ce483"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8ec7f8308b91f5ce484"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659431148464"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e8f77f8308b91f5ce48b"
+  },
+  "orderNo": "XJ2022080213",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1659456000000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "sdfsdf",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8f77f8308b91f5ce48c"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8f77f8308b91f5ce48d"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e8f77f8308b91f5ce48e"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659431159785"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62e8e9007f8308b91f5ce495"
+  },
+  "orderNo": "XJ2022080214",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1659369600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1660579200000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "tom",
+    "userEmail": "tom@pro-partner.com.tw"
+  },
+  "leaveTime": "15天",
+  "reasons": "fff",
+  "auditUsers": "tom,人事,財會",
+  "curAuditUserName": "tom",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "tom",
+      "userEmail": "tom@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e9007f8308b91f5ce496"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e9007f8308b91f5ce497"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "62e8e9007f8308b91f5ce498"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1659431168836"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6318609c85535289d2be4d05"
+  },
+  "orderNo": "XJ2022090715",
+  "applyType": 1,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1662480000000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1662566400000"
+    }
+  },
+  "applyUser": {
+    "userId": "F10803",
+    "userName": "陳彥齊",
+    "userEmail": "SamuelChen@pro-partner.com.tw"
+  },
+  "leaveTime": "2天",
+  "reasons": "ff",
+  "auditUsers": "陳彥齊,人事,財會",
+  "curAuditUserName": "陳彥齊",
+  "auditFlows": [
+    {
+      "userId": "F10803",
+      "userName": "陳彥齊",
+      "userEmail": "SamuelChen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "6318609c85535289d2be4d06"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "6318609c85535289d2be4d07"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "money@pro-partner.com.tw",
+      "_id": {
+        "$oid": "6318609c85535289d2be4d08"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1662541980819"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63577cbe32ac6b65018ba26d"
+  },
+  "orderNo": "XJ2022102516",
+  "applyType": 2,
+  "startTime": {
+    "$date": {
+      "$numberLong": "1661961600000"
+    }
+  },
+  "endTime": {
+    "$date": {
+      "$numberLong": "1666972800000"
+    }
+  },
+  "applyUser": {
+    "userId": "100005",
+    "userName": "蕭副理",
+    "userEmail": "samuelchen@pro-partner.com.tw"
+  },
+  "leaveTime": "59天",
+  "reasons": "vvvvv",
+  "auditUsers": "蕭副理,人事,財會",
+  "curAuditUserName": "蕭副理",
+  "auditFlows": [
+    {
+      "userId": "100005",
+      "userName": "蕭副理",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577cbe32ac6b65018ba26e"
+      }
+    },
+    {
+      "userId": "100010",
+      "userName": "人事",
+      "userEmail": "proadmin@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577cbe32ac6b65018ba26f"
+      }
+    },
+    {
+      "userId": "100012",
+      "userName": "財會",
+      "userEmail": "samuelchen@pro-partner.com.tw",
+      "_id": {
+        "$oid": "63577cbe32ac6b65018ba270"
+      }
+    }
+  ],
+  "auditLogs": [],
+  "applyState": 5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1666677950263"
+    }
+  },
+  "__v": 0
+}]

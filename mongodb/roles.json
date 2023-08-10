@@ -1,0 +1,366 @@
+[{
+  "_id": {
+    "$oid": "62d66d4dad17cc2e2dfd0dd2"
+  },
+  "roleName": "系統分系專員",
+  "permissionList": {
+    "checkedKeys": [
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0"
+    ],
+    "halfCheckedKeys": [
+      "62d4d74486a2cfaa22fed38d",
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659509455391"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0,
+  "remark": "系統分系專員"
+},{
+  "_id": {
+    "$oid": "62d66d6cad17cc2e2dfd0dd9"
+  },
+  "roleName": "資訊副理",
+  "remark": "資訊副理",
+  "permissionList": {
+    "checkedKeys": [
+      "62d4f886ca0a08614eb9b3ab",
+      "62d6747751a5b992dd98b56d"
+    ],
+    "halfCheckedKeys": [
+      "62d4d70c86a2cfaa22fed38a",
+      "62d4d6b486a2cfaa22fed37f"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659074469442"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66d74ad17cc2e2dfd0ddd"
+  },
+  "roleName": "總經理",
+  "permissionList": {
+    "checkedKeys": [
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62d4d74486a2cfaa22fed38d",
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659679641240"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0,
+  "remark": "總經理"
+},{
+  "_id": {
+    "$oid": "62d66d7cad17cc2e2dfd0de1"
+  },
+  "roleName": "顧客服務部",
+  "permissionList": {
+    "checkedKeys": [
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62d4d74486a2cfaa22fed38d",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666661736972"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66d85ad17cc2e2dfd0de5"
+  },
+  "roleName": "營運中心",
+  "permissionList": {
+    "checkedKeys": [],
+    "halfCheckedKeys": []
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66d92ad17cc2e2dfd0de9"
+  },
+  "roleName": "財會處",
+  "permissionList": {
+    "checkedKeys": [
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62d4d74486a2cfaa22fed38d",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666055907007"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66d9dad17cc2e2dfd0ded"
+  },
+  "roleName": "產品企劃部",
+  "permissionList": {
+    "checkedKeys": [],
+    "halfCheckedKeys": []
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66da4ad17cc2e2dfd0df1"
+  },
+  "roleName": "行銷企劃處",
+  "permissionList": {
+    "checkedKeys": [
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62d4d74486a2cfaa22fed38d",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659680182872"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66db4ad17cc2e2dfd0df5"
+  },
+  "roleName": "法務部",
+  "permissionList": {
+    "checkedKeys": [
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62e3922c9d1ee2003ea8bd7c",
+      "62d4d74486a2cfaa22fed38d",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666056013965"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66dbfad17cc2e2dfd0dfb"
+  },
+  "roleName": "管理處",
+  "permissionList": {
+    "checkedKeys": [
+      "62d4f886ca0a08614eb9b3ab",
+      "62d90d12e06fda03aca789e4",
+      "62d90d28e06fda03aca789e7",
+      "62d90d52e06fda03aca789ef",
+      "62d90d62e06fda03aca789f2",
+      "62d90d93e06fda03aca789f8",
+      "62d90da7e06fda03aca789fb",
+      "62d90db6e06fda03aca789fe",
+      "62d90dc1e06fda03aca78a01",
+      "62d90df8e06fda03aca78a08",
+      "62d90e0ce06fda03aca78a0b",
+      "62d90e1ce06fda03aca78a0e",
+      "62d90e49e06fda03aca78a17",
+      "62d90e56e06fda03aca78a1a",
+      "62d90e6fe06fda03aca78a1d",
+      "62d9127fe06fda03aca78a23",
+      "62d91291e06fda03aca78a26",
+      "62d912a0e06fda03aca78a29",
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f"
+    ],
+    "halfCheckedKeys": [
+      "62d4d6b486a2cfaa22fed37f",
+      "62d4d70c86a2cfaa22fed38a",
+      "62d4fd9ed71a6c37f25fd229",
+      "62d4fdd4d71a6c37f25fd231",
+      "62d7604d5e3558a696a8d8fa",
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62d4d74486a2cfaa22fed38d",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1666000356880"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d66dc4ad17cc2e2dfd0dff"
+  },
+  "roleName": "資訊處",
+  "permissionList": {
+    "checkedKeys": [
+      "62d4f886ca0a08614eb9b3ab",
+      "62d90d12e06fda03aca789e4",
+      "62d90d28e06fda03aca789e7",
+      "62d90d52e06fda03aca789ef",
+      "62d90d62e06fda03aca789f2",
+      "62d90d93e06fda03aca789f8",
+      "62d90da7e06fda03aca789fb",
+      "62d90db6e06fda03aca789fe",
+      "62d90dc1e06fda03aca78a01",
+      "62d90df8e06fda03aca78a08",
+      "62d90e0ce06fda03aca78a0b",
+      "62d90e1ce06fda03aca78a0e",
+      "62d90e49e06fda03aca78a17",
+      "62d90e56e06fda03aca78a1a",
+      "62d90e6fe06fda03aca78a1d",
+      "62d9127fe06fda03aca78a23",
+      "62d91291e06fda03aca78a26",
+      "62d912a0e06fda03aca78a29",
+      "62de42f413d4ee5bf02535ff",
+      "62e0f5aec1f6eb6d4c0bdb98",
+      "62e0f5ccc1f6eb6d4c0bdb9b",
+      "62e393619d1ee2003ea8bda0",
+      "62eb932c0eaa9895d594569f",
+      "62ecb47b24bca85133fc1697"
+    ],
+    "halfCheckedKeys": [
+      "62d4d6b486a2cfaa22fed37f",
+      "62d4d70c86a2cfaa22fed38a",
+      "62d4fd9ed71a6c37f25fd229",
+      "62d4fdd4d71a6c37f25fd231",
+      "62d7604d5e3558a696a8d8fa",
+      "62d4d74486a2cfaa22fed38d",
+      "62d920d42b284432758a4662",
+      "62e0f58dc1f6eb6d4c0bdb95",
+      "62e3922c9d1ee2003ea8bd7c",
+      "62eb92f80eaa9895d594567b"
+    ]
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "1659679934675"
+    }
+  },
+  "createTime": {
+    "$date": {
+      "$numberLong": "1658219800067"
+    }
+  },
+  "__v": 0
+}]
