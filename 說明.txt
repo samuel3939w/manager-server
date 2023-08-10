@@ -10,3 +10,7 @@ server {
     }
     add_header Cache-Control "no-cache, must-revalidate";
 }
+
+
+注意:要修改root /Users/F10803/Desktop/manager-serve/public/upload;這裡的檔案儲存路徑
+還有config資料夾下面index.js裡面dirFilePath的路徑
